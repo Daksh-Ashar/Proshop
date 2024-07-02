@@ -17,7 +17,7 @@ const PlaceOrderScreen = () => {
     useEffect(()=>{
             if(!cart.shippingAddress.address)
             {
-                navigate('shipping')
+                navigate('/shipping')
             }else if(!cart.paymentMethod){
                 navigate('/payment');
             }
@@ -35,7 +35,7 @@ const PlaceOrderScreen = () => {
                 totalPrice: cart.totalPrice
             }).unwrap();
             dispatch(clearCartItems());
-            navigate(`order/${res._id}`)
+            navigate(`/order/${res._id}`)
         }catch(error){
             toast.error(error);
         }
