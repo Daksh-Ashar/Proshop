@@ -34,6 +34,7 @@ import ProductListScreen from './screens/Admin/ProductListScreen.jsx';
 import ProductEditScreen from './screens/Admin/ProductEditScreen.jsx';
 import UserListScreen from './screens/Admin/UserListScreen.jsx';
 import UserEditScreen from './screens/Admin/UserEditScreen.jsx';
+import DashboardScreen from './screens/Admin/DashboardScreen.jsx';
 
 const initialOptions = {
   "client-id": "https://sandbox.paypal.com",
@@ -67,6 +68,7 @@ const router = createBrowserRouter(
       <Route path="" element={<AdminRoute/>}>
           <Route path="/admin/orderlist" element={<OrderListScreen/>} />
           <Route path="/admin/productlist" element={<ProductListScreen/>} />
+          <Route path="/admin/AdminDashboard" element={<DashboardScreen/>} />
           <Route path="/admin/productlist/:pageNumber" element={<ProductListScreen/>} />
           <Route path="/admin/product/:id/edit" element={<ProductEditScreen/>} />
           <Route path="/admin/userlist" element={<UserListScreen/>} />

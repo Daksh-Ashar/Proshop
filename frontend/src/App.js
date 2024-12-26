@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main className='py-3'>
-        <Container>
+      <main className='py-3 px-2'>
+        <Container fluid>
             <Outlet/>
         </Container>
       </main>

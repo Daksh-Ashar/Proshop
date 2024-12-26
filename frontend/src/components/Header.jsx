@@ -29,8 +29,7 @@ const Header = () => {
             <Container>
               <LinkContainer to='/'>
                     <Navbar.Brand>
-                      <img src={logo} alt="Proshop"  />
-                      Proshop
+                      <b>Proshop</b>
                     </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -64,6 +63,9 @@ const Header = () => {
                   </LinkContainer>
                   <LinkContainer to="/admin/orderlist">
                   <NavDropdown.Item>Order List</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to="/admin/AdminDashboard">
+                  <NavDropdown.Item>Admin Dashboard</NavDropdown.Item>
                   </LinkContainer>
                 </NavDropdown>)}
                 </Nav>

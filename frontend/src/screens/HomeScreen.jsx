@@ -5,7 +5,6 @@ import Loader from "../components/Loader.jsx";
 import Message from '../components/Message.jsx';
 import { useParams } from 'react-router-dom';
 import Paginate from '../components/Paginate.jsx';
-import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import ProductCarousel from '../components/ProductCarousel.jsx';
 import Meta from '../components/Meta.jsx';
